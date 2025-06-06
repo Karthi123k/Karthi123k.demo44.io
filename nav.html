@@ -94,8 +94,7 @@
   </div>
 </nav>
 <script>
-<!-- Active Tab Script -->
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   let currentPage = window.location.pathname.split("/").pop();
   if (!currentPage) currentPage = "index.html";
 
@@ -106,10 +105,9 @@ document.addEventListener("DOMContentLoaded", () => {
     linkHref = linkHref.split("?")[0].split("#")[0];
 
     if (linkHref === currentPage) {
-      document.querySelectorAll(".navbar-nav .nav-link").forEach(l => l.classList.remove("active"));
       link.classList.add("active");
     }
   });
 });
-
 </script>
+
