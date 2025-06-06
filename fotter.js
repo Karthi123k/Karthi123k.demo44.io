@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener("DOMContentLoaded", function () {
   let currentPage = window.location.pathname.split("/").pop();
   if (!currentPage) currentPage = "index.html";
@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-</script>
+
