@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Vinay Raj</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS if needed -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @media (max-width: 800px) {
+            .text-sm {
+                font-size: 0.7rem; /* Decrease font size for small screens */
+            }
+
+            .c {
+                margin: 20px; /* Add right margin for small screens */
+            }
+            
+        }
+
+        .v{
+            padding-bottom: 150px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Header Section -->
+<div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <div>
+    <div class="header">
+        <h1>Dr. Vinay Raj</h1>
+    </div>
+<div id="navbar-container"></div>
+
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+    })
+    .catch(error => console.error('Navbar load error:', error));
+</script>
+
+
+    <!-- Profile Card Section -->
+    <div class="container-fluid v">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Profile Image -->
+                    <div class="rounded-circle overflow-hidden" style="width: 300px; height: 300px; margin: 0 auto;">
+                        <img src="./assets/pro-pic.jpeg" alt="Profile Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8" style="overflow-x: auto;">
+                    <!-- Details -->
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" class="f1">Name:</th>
+                            <td>Vinay Raj</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="f1">Designation:</th>
+                            <td>Assistant Professor</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="f1">Mobile No:</th>
+                            <td>9963850192</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="f1">Email Id:</th>
+                            <td>vinayraj@nitt.edu, vinayrajlodh@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="f1">Specialization:</th>
+                            <td>Software Engineering, Microservices, Service Oriented Architecture, Serverless Computing, Machine Learning</td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #dee2e6;">
+                            <th scope="row" class="f1">Address:</th>
+                            <td>#308, Lyceum Building, Department of Computer Applications, National Institute of Technology Tiruchirappalli, Trichy, Tamil Nadu-620015</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-1" style="font-size: larger;"><b>"Happiness is meaning and purpose of life"</b> </div>
+    </div>
+</div>
+    <footer class="footer text-center con container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 " style="color: black;">
+                    <!-- LinkedIn icon and link -->
+                    Contact me via : 
+                    <a target="blank" href="https://www.linkedin.com/in/dr-vinay-raj-73777b40/" target="_blank" class="social-icon">
+                        <img src="./assets/ln.png" class="s" alt="">
+                    </a>
+                    
+                    <a target="blank" href="https://scholar.google.co.in/citations?user=4JeJaHsAAAAJ&hl=en" target="_blank" class="social-icon">
+                        <img src="./assets/gs.png" class="s" alt="">
+                    </a>
+                    
+                    <a target="blank" href="https://www.scopus.com/authid/detail.uri?authorId=57215743655" target="_blank" class="social-icon">
+                        <img src="./assets/scopus.png" class="s"alt="">
+                    </a>
+                    
+                    <a target="blank" href="https://twitter.com/vinayrajlodh" target="_blank" class="social-icon">
+                        <img src="./assets/1690643591twitter-x-logo-png.png" class="s" alt="">
+                    </a>
+                    <!-- Add more social media icons and links as needed -->
+                </div>
+                <div class="col-lg-6" style="color: black;">
+                    <!-- Copyright text -->
+                    Created &copy; 2023 by Shrikant Dandge (M.Tech - 205223006)
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- Add Bootstrap JS and jQuery scripts here -->
+    <!-- Add your custom JavaScript if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

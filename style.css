@@ -1,0 +1,207 @@
+*{
+  margin:1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  all: unset;
+}
+
+body{
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color:#000000;
+  font-size:larger;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+/* Target the outer list with class "list" */
+.list {
+  list-style-type: disc; /* Use "disc" for default bullet points */
+  /* Add any additional styling you want for the outer list */
+}
+
+/* Target the nested list with class "sub-list" */
+.sub-list {
+  list-style-type: circle; /* Use "circle" for nested bullet points */
+  /* Add any additional styling you want for the nested list */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+}
+
+.photo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo div {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 500%;
+  position: relative;
+}
+.photo div img {
+  top: -55px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.content {
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.content .main-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+.sub-text span {
+  color: #999999;
+}
+.nav-bar {
+  height: 60px;
+  /*background-color: rgb(29, 29, 29);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+.link {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 250ms ease;
+  color:black;
+}
+
+.header {
+  font-size: 45px;
+  font-weight: 700;
+  color: black;
+  height: 80px;
+  background-color: beige;
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+}
+
+.f1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.f1:hover{
+  background-color: #E1F4F3;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px !important;
+}
+
+.footer {
+  border: solid;
+  color: #fff;
+  padding: 5px 0;
+  font-size: medium;
+/*   position: fixed; */
+  bottom: 0;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for social media icons */
+.social-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #fff;
+}
+.header {
+  border:none;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: beige;
+  border: 15px solid white;
+    border-radius: 40px;
+}
+
+.card {
+  margin-top: 20px;
+  border: 2px solid gray;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.con{
+  background-color: beige;
+  margin-bottom: 0;
+  margin-top: 8px;
+  bottom: 0; /* Adjust this value as needed */
+}
+
+.s{
+  width: 20px;
+  height: 20px;
+}
+
+.card:hover{
+  background-color: rgb(252, 253, 253);
+}
+
+.cd .navbar-nav .nav-item{
+  cursor: pointer;
+}
+
+td{
+  border-right: 1px solid #dee2e6;
+}
+
+h3,h2{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3{
+  padding-top: 20px;
+}
+
+.list li{
+  margin-left: 30px;
+}
+
+h4{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+h5{
+  font-weight: bold;
+  text-transform: capitalize;
+}
