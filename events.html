@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Add your custom CSS if needed -->
     <link rel="stylesheet" href="./style.css">
+          <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+  />
     <style>
         h3{
             font-weight: bold;
@@ -30,7 +34,91 @@
             
         }
         
+.ribbon-heading .badge-heading {
+  background: linear-gradient(to right, #e29b6c, #a23434); /* Soft orange to deep red */
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  border-radius: 50% / 30%; /* Oval badge effect */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  position: relative;
+  border: 4px solid #fff; /* Optional border like a badge */
+}
 
+
+.section-card {
+      display: flex;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .card-left-bar {
+      width: 12px;
+      background-color: #0d6efd; /* Default Blue */
+    }
+
+    .card-content {
+      background-color: #fff;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .list, .sub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sub-list {
+      padding-left: 15px;
+    }
+
+    /* Color codes for each section */
+    .bar-experience    { background-color: #0d6efd; }
+    .bar-education     { background-color: #198754; }
+    .bar-qualification { background-color: #fd7e14; }
+    .bar-resp-nit      { background-color: #6f42c1; }
+    .bar-resp-outside  { background-color: #dc3545; }
+    .bar-certification { background-color: #20c997; }
+
+    @media (max-width: 576px) {
+      .card-content {
+        padding: 15px;
+      }
+    }
+    
+.wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ribbon {
+  display: inline-flex;
+  align-items: center;
+background: linear-gradient(90deg, #af5b27, #887331);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ribbon i {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
     </style>
 </head>
 <body>
@@ -48,24 +136,35 @@
     })
     .catch(error => console.error('Navbar load error:', error));
 </script>
-
-    <div class="container c">
-        <div class="row v">
-            <div class="col-md-12">
-                <h3 class="text-center">Events Organized</h3>
-            </div>
-        </div>
-        <p class="text-sm">
-            <h4>FDPs/Workshops/STTPs</h4>
-            <ul>
-            <li style="padding-top: 20px;"><b>Coordinator</b> for 10 days Faculty Development programme on <b>"Machine Learning for Data Analytics"</b> organized by Dept. of Computer Applications, NIT Trichy in association with E & ICT Academy, NIT Warangal from 20 Feb to 2nd March, 2023.
-            </li>
-            
-            <li style="padding-top: 20px;">
-            <b>Coordinator</b> for one week Online Workshop on <b>"Blockchain Technology and its Applications"</b> organized by Dept. of Computer Applications, NIT Trichy from 21st to 25th August, 2023
-            </li></ul></p>
+<div class="container" style=" margin: -30px auto 2rem;">
+  <div class="wrapper">
+    <div class="ribbon">
+      <i class="bi bi-calendar-event-fill"></i> Events Organized
     </div>
+  </div>
+
+  <div class="section-card">
+    <div class="card-left-bar bar-qualification"></div> <!-- Orange left bar -->
+    <div class="card-content">
+      <h3 class="section-title">FDPs/Workshops/STTPs</h3>
+      <ul class="list">
+        <li class="d-flex align-items-start mb-3">
+          <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+          <div>
+            <b>Coordinator</b> for 10 days Faculty Development programme on <b>"Machine Learning for Data Analytics"</b> organized by Dept. of Computer Applications, NIT Trichy in association with E & ICT Academy, NIT Warangal from 20 Feb to 2nd March, 2023.
+          </div>
+        </li>
+        <li class="d-flex align-items-start">
+          <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+          <div>
+            <b>Coordinator</b> for one week Online Workshop on <b>"Blockchain Technology and its Applications"</b> organized by Dept. of Computer Applications, NIT Trichy from 21st to 25th August, 2023.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
+
     <footer class="footer text-center con container-fluid">
         <div class="container">
             <div class="row">
@@ -104,3 +203,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+    <script src="nav.js"></script>

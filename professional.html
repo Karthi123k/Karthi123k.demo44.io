@@ -6,6 +6,8 @@
     <title>Dr. Vinay Raj</title>
     <!-- Add Bootstrap CSS link here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <!-- Add your custom CSS if needed -->
     <link rel="stylesheet" href="./style.css">
     <style>
@@ -24,7 +26,91 @@
         .c {
                 padding-bottom: 100px; /* Add right margin for small screens */
         }
+.ribbon-heading .badge-heading {
+  background: linear-gradient(to right, #e29b6c, #a23434); /* Soft orange to deep red */
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  border-radius: 50% / 30%; /* Oval badge effect */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  position: relative;
+  border: 4px solid #fff; /* Optional border like a badge */
+}
 
+
+.section-card {
+      display: flex;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .card-left-bar {
+      width: 12px;
+      background-color: #0d6efd; /* Default Blue */
+    }
+
+    .card-content {
+      background-color: #fff;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .list, .sub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sub-list {
+      padding-left: 15px;
+    }
+
+    /* Color codes for each section */
+    .bar-experience    { background-color: #0d6efd; }
+    .bar-education     { background-color: #198754; }
+    .bar-qualification { background-color: #fd7e14; }
+    .bar-resp-nit      { background-color: #6f42c1; }
+    .bar-resp-outside  { background-color: #dc3545; }
+    .bar-certification { background-color: #20c997; }
+
+    @media (max-width: 576px) {
+      .card-content {
+        padding: 15px;
+      }
+    }
+    
+.wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ribbon {
+  display: inline-flex;
+  align-items: center;
+background: linear-gradient(90deg, #af5b27, #887331);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ribbon i {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
     </style>
 </head>
 <body>
@@ -41,272 +127,145 @@
       document.getElementById('navbar-container').innerHTML = data;
     })
     .catch(error => console.error('Navbar load error:', error));
-</script>
+</script>  
+<div class="container" style=" margin: -30px auto 2rem;">
+<div class="wrapper">
+  <div class="ribbon">
+    <i class="bi bi-person-workspace"></i> Experience and Education
+  </div>
+</div>
 
-    
-    <div class="container">
-        <div class="row v">
-            <div class="col-md-12">
-                <h2 class="text-center">Education and Experience</h2>
-            </div>
-        </div>
 
-        <!-- Education Section -->
-        <div class="section">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <h3>Education</h3>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Doctor of Philosophy (PhD) 2021</strong>
-                              <ul class="sub-list">
-                                <li>Department of Computer Science & Engineering, NIT Warangal</li>
-                                <li>Thesis Title: A Framework for Migration of SOA based Applications to Microservices Architecture </li>
-                                <li>Thesis Supervisor: Dr. S. Ravichandra, Associate Professor, NIT Warangal </li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Master of Technology (M.Tech) 2016</strong>
-                              <ul class="sub-list">
-                                <li>Department of Computer Science & Engineering (Specialization: Software Systems)</li>
-                                <li>Work-Integrated Learning Programme (WILP) through TCS, BITS-Pilani, Hyderabad. </li>
-                                <li>Thesis Title: Process and Implementation of Full MNP using TIBCO Integration Services</li>
-                                <li>Thesis Supervisor: Dr. Tirtharaj Dash </li>
-                              </ul>    
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Bachelor of Technology (B.Tech) 2012</strong>
-                              <ul class="sub-list">
-                                <li>Department of Computer Science & Engineering</li>
-                                <li>KITS Warangal, Kakatiya University</li>
-                                <li>Division/Grade: I Class with Distinction</li>
-                              </ul>    
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Professional Experiences Section -->
-        <div class="section">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <h3>Professional Experiences</h3>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Assistant Professor - NIT Tiruchirappalli</strong>
-                              <ul class="sub-list">
-                                <li>Department of Computer Applications</li>
-                                <li>26 Sept 2022 - till date</li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Assistant Professor - KITS Warangal</strong>
-                              <ul class="sub-list">
-                                <li>Department of Computer Science & Engineering (Networks)</li>
-                                <li>May 2022 - August 2022</li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Assistant Professor - BVRIT Hyderabad College of Engineering for Women</strong>
-                              <ul class="sub-list">
-                                <li>Department of Computer Science & Engineering</li>
-                                <li>April 2021 - April 2022</li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>   
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Senior Software Engineer - Capgemini, Hyderabad</strong>
-                              <ul class="sub-list">
-                                <li>Project: Ladbrokes</li>
-                                <li>Role: TIBCO BW Developer </li>
-                                <li>Feb 2016 - July 2016</li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>Systems Engineer - TCS, Hyderabad</strong>
-                              <ul class="sub-list">
-                                <li>Project: Tata Tele Services Ltd (TTSL)</li>
-                                <li>Role: TIBCO BW Developer and Requirements Analyst </li>
-                                <li>March 2013 - Jan 2016</li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <strong>IT Associate - IEG JKC, Hyderabad</strong>
-                              <ul class="sub-list">
-                                <li>AP Society for Knowledge Networks, Hyderabad</li>
-                                 <li>Role: Softskills Trainer</li>
-                                <li>Jun2 2012 - Feb 2013</li>
-                              </ul>  
-                            </li>
-                          </ul>
-                        </div>             
-                      </div>
-                </div>
-            </div>
-        </div>
+    <!-- Experience Section -->
+    <div class="section-card">
+      <div class="card-left-bar bar-experience"></div>
+      <div class="card-content">
+        <h3 class="section-title"><i class="bi bi-briefcase"></i> Professional Experiences</h3>
+        <ul class="list">
+          <li><strong>Assistant Professor - NIT Tiruchirappalli</strong>
+            <ul class="sub-list">
+              <li>Department of Computer Applications</li>
+              <li><i class="bi bi-calendar-event"></i> 26 Sept 2022 - Present</li>
+            </ul>
+          </li>
+          <li><strong>Assistant Professor - KITS Warangal</strong>
+            <ul class="sub-list">
+              <li>Dept. of CSE (Networks)</li>
+              <li><i class="bi bi-calendar-event"></i> May 2022 - Aug 2022</li>
+            </ul>
+          </li>
+          <li><strong>Assistant Professor - BVRIT Hyderabad</strong>
+            <ul class="sub-list">
+              <li>Dept. of CSE</li>
+              <li><i class="bi bi-calendar-event"></i> Apr 2021 - Apr 2022</li>
+            </ul>
+          </li>
+          <li><strong>Senior Software Engineer - Capgemini</strong>
+            <ul class="sub-list">
+              <li>Project: Ladbrokes | Role: TIBCO BW Developer</li>
+              <li><i class="bi bi-calendar-event"></i> Feb 2016 - July 2016</li>
+            </ul>
+          </li>
+          <li><strong>Systems Engineer - TCS</strong>
+            <ul class="sub-list">
+              <li>Project: TTSL | Role: TIBCO BW Dev & Analyst</li>
+              <li><i class="bi bi-calendar-event"></i> Mar 2013 - Jan 2016</li>
+            </ul>
+          </li>
+          <li><strong>IT Associate - IEG JKC</strong>
+            <ul class="sub-list">
+              <li>Role: Softskills Trainer</li>
+              <li><i class="bi bi-calendar-event"></i> Jun 2012 - Feb 2013</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <!-- Additional Qualifications Section -->
-        <div class="section">
-            <div>
-                <h3>Additional Qualifications</h3>
-                <div>
-                  <ul class="list">
-                    <li>
-                      <span>
-                        Diploma in AI & ML from University of Hyderabad (2022)
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        Qualified GATE [CS] in 2011 & 2012.
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        Qualified UGC-NET in 2017 & 2018
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        Qualified Telangana State SET in 2018.
-                      </span>
-                    </li>
-                  </ul>
-                </div>             
-              </div>
-        </div>
-        <!-- Academic/Administrative Responsibilities Section -->
-        <div class="section">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <h3>Academic/Administrative Responsibilities at NIT Trichy</h3>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <span>
-                                Member - M.Tech Project Evaluation Committee - August 2023 to till date
-                              </span>
-                            </li>
-                            <li>
-                              <span>
-                                Member - Department Minutes preparation - December 2023 to till date
-                              </span>
-                            </li>
-                            <li>
-                              <span>
-                                Member - Anti Ragging Committee - Nov 2022 to Till date
-                              </span>
-                            </li>
-                            <li>
-                              <span>
-                                Member - Department coordinator for Industry Institute Interaction (III) Cell  - August 2023 to Till date
-                              </span>
-                            </li>
-                          </ul>
-                        </div>             
-                      </div>
-                </div>
-            </div>
-        </div>
+    <!-- Education Section -->
+    <div class="section-card">
+      <div class="card-left-bar bar-education"></div>
+      <div class="card-content">
+        <h3 class="section-title"><i class="bi bi-mortarboard"></i> Education</h3>
+        <ul class="list">
+          <li><strong>PhD (2021) - NIT Warangal</strong>
+            <ul class="sub-list">
+              <li>Dept. of CSE | Thesis: SOA to Microservices</li>
+              <li>Supervisor: Dr. S. Ravichandra</li>
+            </ul>
+          </li>
+          <li><strong>M.Tech (2016) - BITS Pilani</strong>
+            <ul class="sub-list">
+              <li>Software Systems (WILP)</li>
+              <li>Thesis: MNP with TIBCO | Supervisor: Dr. Tirtharaj Dash</li>
+            </ul>
+          </li>
+          <li><strong>B.Tech (2012) - KITS Warangal</strong>
+            <ul class="sub-list">
+              <li>CSE | 1st Class with Distinction</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="section">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <h3>Academic/Administrative Responsibilities outside the University</h3>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <span>
-                                Member - Ph.D. Doctoral Committee - VIT University, AP - August 2023 to till date
-                              </span>
-                            </li>
-                          </ul>
-                        </div>             
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Additional Qualifications -->
+    <div class="section-card">
+      <div class="card-left-bar bar-qualification"></div>
+      <div class="card-content">
+        <h3 class="section-title"><i class="bi bi-award"></i> Additional Qualifications</h3>
+        <ul class="list">
+          <li><i class="bi bi-patch-check-fill text-success"></i> Diploma in AI & ML – University of Hyderabad (2022)</li>
+          <li><i class="bi bi-patch-check-fill text-success"></i> GATE [CS] – Qualified in 2011 & 2012</li>
+          <li><i class="bi bi-patch-check-fill text-success"></i> UGC-NET – Qualified in 2017 & 2018</li>
+          <li><i class="bi bi-patch-check-fill text-success"></i> TS-SET – Qualified in 2018</li>
+        </ul>
+      </div>
+    </div>
 
-        <!-- Certifications Section -->
-        <div class="section c">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <h3>Certifications</h3>
-                        <div>
-                          <ul class="list">
-                            <li>
-                              <span>
-                                Completed Certificate course for Technical Teachers by National Initiative for Technical Teachers Training (NITTT), AICTE.
-                              </span>
-                            </li>
-                            <li>
-                              <span>
-                                Certified IBM DB2 Academic Associate.
-                              </span>
-                            </li>
-                            <li>
-                              <span>
-                                Elite + Gold Certificate in NPTEL Course “Problem Solving with Programming in C” (2022) and also Topper of the course (Top 1%)
-                              </span>
-                            </li>
-                            <li>
-                              <span>
-                                Elite + Silver and Elite Certificates for below NPTEL Courses     
-                              </span>
-                              <ul>
-                                <li>
-                                  Python for Data Science (2021)
-                                </li>
-                                <li>
-                                  Computer Networks (2023)
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>             
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- NIT Responsibilities -->
+    <div class="section-card">
+      <div class="card-left-bar bar-resp-nit"></div>
+      <div class="card-content">
+        <h3 class="section-title"><i class="bi bi-building-check"></i> Responsibilities at NIT Trichy</h3>
+        <ul class="list">
+          <li>Member - M.Tech Project Evaluation Committee</li>
+          <li>Minutes Preparation – Dept. of CA</li>
+          <li>Member - Anti Ragging Committee</li>
+          <li>Coordinator - Industry Institute Interaction Cell</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Outside Responsibilities -->
+    <div class="section-card">
+      <div class="card-left-bar bar-resp-outside"></div>
+      <div class="card-content">
+        <h3 class="section-title"><i class="bi bi-globe"></i> Responsibilities Outside University</h3>
+        <ul class="list">
+          <li>PhD Doctoral Committee Member – VIT-AP (Since Aug 2023)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section-card">
+      <div class="card-left-bar bar-certification"></div>
+      <div class="card-content">
+        <h3 class="section-title"><i class="bi bi-patch-check"></i> Certifications</h3>
+        <ul class="list">
+          <li>Technical Teachers Certificate – NITTT (AICTE)</li>
+          <li>IBM DB2 Academic Associate</li>
+          <li>NPTEL Gold: C Programming (Top 1%)</li>
+          <li>NPTEL Elite: Python for Data Science (2021)</li>
+          <li>NPTEL Elite: Computer Networks (2023)</li>
+        </ul>
+      </div>
     </div>
   </div>
+    
+
     <footer class="footer text-center con container-fluid">
       <div class="container">
           <div class="row">
@@ -346,3 +305,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+    <script src="nav.js"></script>

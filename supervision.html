@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Add your custom CSS if needed -->
     <link rel="stylesheet" href="./style.css">
+                      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+  />
     <style>
         h2{
             font-weight: bold;
@@ -34,6 +38,91 @@
             padding-bottom: 100px;
         }
 
+.ribbon-heading .badge-heading {
+  background: linear-gradient(to right, #e29b6c, #a23434); /* Soft orange to deep red */
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  border-radius: 50% / 30%; /* Oval badge effect */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  position: relative;
+  border: 4px solid #fff; /* Optional border like a badge */
+}
+
+
+.section-card {
+      display: flex;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .card-left-bar {
+      width: 12px;
+      background-color: #0d6efd; /* Default Blue */
+    }
+
+    .card-content {
+      background-color: #fff;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .list, .sub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sub-list {
+      padding-left: 15px;
+    }
+
+    /* Color codes for each section */
+    .bar-experience    { background-color: #0d6efd; }
+    .bar-education     { background-color: #198754; }
+    .bar-qualification { background-color: #fd7e14; }
+    .bar-resp-nit      { background-color: #6f42c1; }
+    .bar-resp-outside  { background-color: #dc3545; }
+    .bar-certification { background-color: #20c997; }
+
+    @media (max-width: 576px) {
+      .card-content {
+        padding: 15px;
+      }
+    }
+    
+.wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ribbon {
+  display: inline-flex;
+  align-items: center;
+background: linear-gradient(90deg, #af5b27, #887331);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ribbon i {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
     </style>
 </head>
 <body>
@@ -51,100 +140,122 @@
     })
     .catch(error => console.error('Navbar load error:', error));
 </script>
-
-    <div class="container c">
-        <div class="row v">
-            <div class="col-md-12">
-                <h2 class="text-center">Supervisions</h2>
-            </div>
-        </div>
-        <p class="text-sm">
-            <h3>Ph.D. Students</h3>
-              <div>
-                <ul class="list">
-                   <li>
-                    <span>
-                      Supervisor for Mr. S. Suresh (Part-Time), Research area: Software Engineering (Ongoing)
-                    </span>
-                   </li>
-                   <li>
-                    Co-Supervisor for Ms. Neha Kaushik (Full-Time at JC Bose University of Science & Technology, Faridabad), Research area: Microservices Architecture (Ongoing)
-                   </li> 
-                    <li>
-                    <span>
-                      Supervisor for Mr. M. Anil Kumar (Part-Time), Research area: Migration to Microservices (July 2024 - Ongoing)
-                    </span>
-                   </li>
-                    <li>
-                    <span>
-                      Supervisor for Mr. M. Kranthi Kumar (Part-Time), Research area: AI as a Microservice (July 2024 - Ongoing)
-                    </span>
-                   </li>
-                </ul>
-              </div>
-        <p class="text-sm">
-            <h3>M.Tech Students</h3>
-                <div>
-                  <ul class="list">
-                     <li>
-                      Sidhant Kumar Singh (class of 2022-24)
-                     </li> 
-                      <li>
-                      N Sai Suraj (class of 2023-25)
-                     </li> 
-                  </ul>
-                </div>
-        </p>
-        <p class="text-sm">
-            <h3>M.Sc. Students</h3>
-                <div>
-                  <ul class="list">
-                     <li>
-                      Himanshu Chhaparwal (Class of 2022-24)
-                     </li>
-                     <li>
-                      Saale Satwik (Class of 2022-24)
-                     </li> 
-                        <li>
-                      Kirti Prakash Bhavsar (Class of 2022-24)
-                     </li> 
-                        <li>
-                      Shreshtha Bhattacharjee (Class of 2022-24)
-                     </li> 
-                  </ul>
-                </div>
-        </p>
-        <p class="text-sm">
-            <h3>MCA Students</h3>
-            <div>
-                    <ul class="list">
-                        <li>
-                            Sachin Patidar (Class of 2022-25)
-                        </li>
-                        <li>
-                            Dheeraj Kumar (Class of 2022-25)
-                        </li>
-                        <li>
-                            Mohit Singh Chouhan (Class of 2022-25)
-                        </li> 
-                        <li>
-                            Rishabh Sonkar (Class of 2022-25)
-                        </li> 
-                        <li>
-                            Kishan Bhawsar (Class of 2022-25)
-                        </li> 
-                        <li>
-                            Amit Singh Rajput (Class of 2022-25)
-                        </li> 
-                        <li>
-                            Dheeraj Parihar (Class of 2022-25)
-                        </li> 
-                    </ul>
-            </div>
-        </p>
-        
+<div class="container " style=" margin: -30px auto 2rem;">
+  <div class="wrapper">
+    <div class="ribbon">
+      <i class="bi bi-person-bounding-box"></i> Supervisions
     </div>
+  </div>
+
+  <!-- Ph.D. Students -->
+  <div class="section-card">
+    <div class="card-left-bar bar-education"></div> <!-- Green bar -->
+    <div class="card-content">
+      <h3 class="section-title">Ph.D. Students</h3>
+      <ul class="list">
+        <li class="d-flex align-items-start mb-3">
+          <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+          <span>Supervisor for Mr. S. Suresh (Part-Time), Research area: Software Engineering (Ongoing)</span>
+        </li>
+        <li class="d-flex align-items-start mb-3">
+          <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+          <span>Co-Supervisor for Ms. Neha Kaushik (Full-Time at JC Bose University of Science & Technology, Faridabad), Research area: Microservices Architecture (Ongoing)</span>
+        </li>
+        <li class="d-flex align-items-start mb-3">
+          <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+          <span>Supervisor for Mr. M. Anil Kumar (Part-Time), Research area: Migration to Microservices (July 2024 - Ongoing)</span>
+        </li>
+        <li class="d-flex align-items-start">
+          <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+          <span>Supervisor for Mr. M. Kranthi Kumar (Part-Time), Research area: AI as a Microservice (July 2024 - Ongoing)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- M.Tech Students -->
+  <div class="section-card">
+    <div class="card-left-bar bar-certification"></div> <!-- Teal bar -->
+    <div class="card-content">
+      <h3 class="section-title">M.Tech Students</h3>
+      <ul class="list">
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-info me-3 fs-5"></i>
+          <span>Sidhant Kumar Singh (class of 2022-24)</span>
+        </li>
+        <li class="d-flex align-items-start">
+          <i class="bi bi-check-circle-fill text-info me-3 fs-5"></i>
+          <span>N Sai Suraj (class of 2023-25)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- M.Sc. Students -->
+  <div class="section-card">
+    <div class="card-left-bar bar-qualification"></div> <!-- Orange bar -->
+    <div class="card-content">
+      <h3 class="section-title">M.Sc. Students</h3>
+      <ul class="list">
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-warning me-3 fs-5"></i>
+          <span>Himanshu Chhaparwal (Class of 2022-24)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-warning me-3 fs-5"></i>
+          <span>Saale Satwik (Class of 2022-24)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-warning me-3 fs-5"></i>
+          <span>Kirti Prakash Bhavsar (Class of 2022-24)</span>
+        </li>
+        <li class="d-flex align-items-start">
+          <i class="bi bi-check-circle-fill text-warning me-3 fs-5"></i>
+          <span>Shreshtha Bhattacharjee (Class of 2022-24)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MCA Students -->
+  <div class="section-card">
+    <div class="card-left-bar bar-experience"></div> <!-- Blue bar -->
+    <div class="card-content">
+      <h3 class="section-title">MCA Students</h3>
+      <ul class="list">
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Sachin Patidar (Class of 2022-25)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Dheeraj Kumar (Class of 2022-25)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Mohit Singh Chouhan (Class of 2022-25)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Rishabh Sonkar (Class of 2022-25)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Kishan Bhawsar (Class of 2022-25)</span>
+        </li>
+        <li class="d-flex align-items-start mb-2">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Amit Singh Rajput (Class of 2022-25)</span>
+        </li>
+        <li class="d-flex align-items-start">
+          <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+          <span>Dheeraj Parihar (Class of 2022-25)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
+
     <footer class="footer text-center con container-fluid">
         <div class="container">
             <div class="row">

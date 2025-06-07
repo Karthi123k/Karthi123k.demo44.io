@@ -68,7 +68,14 @@ body{
 .sub-text span {
   color: #999999;
 }
-
+.nav-bar {
+  height: 60px;
+  /*background-color: rgb(29, 29, 29);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
 .link {
   font-size: 18px;
   font-weight: 700;
@@ -138,7 +145,11 @@ body{
   font-weight: bold;
 }
 
-
+.navbar {
+  background-color: beige;
+  border: 15px solid white;
+    border-radius: 40px;
+}
 
 .card {
   margin-top: 20px;

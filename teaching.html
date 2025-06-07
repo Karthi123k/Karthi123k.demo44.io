@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Add your custom CSS if needed -->
     <link rel="stylesheet" href="./style.css">
+                          <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+  />
     <style>
         h3{
             font-weight: bold;
@@ -33,6 +37,92 @@
             padding-top: 20px;
         }
 
+        
+.ribbon-heading .badge-heading {
+  background: linear-gradient(to right, #e29b6c, #a23434); /* Soft orange to deep red */
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  border-radius: 50% / 30%; /* Oval badge effect */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  position: relative;
+  border: 4px solid #fff; /* Optional border like a badge */
+}
+
+
+.section-card {
+      display: flex;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .card-left-bar {
+      width: 12px;
+      background-color: #0d6efd; /* Default Blue */
+    }
+
+    .card-content {
+      background-color: #fff;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .list, .sub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sub-list {
+      padding-left: 15px;
+    }
+
+    /* Color codes for each section */
+    .bar-experience    { background-color: #0d6efd; }
+    .bar-education     { background-color: #198754; }
+    .bar-qualification { background-color: #fd7e14; }
+    .bar-resp-nit      { background-color: #6f42c1; }
+    .bar-resp-outside  { background-color: #dc3545; }
+    .bar-certification { background-color: #20c997; }
+
+    @media (max-width: 576px) {
+      .card-content {
+        padding: 15px;
+      }
+    }
+    
+.wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ribbon {
+  display: inline-flex;
+  align-items: center;
+background: linear-gradient(90deg, #af5b27, #887331);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ribbon i {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
     </style>
 </head>
 <body>
@@ -50,37 +140,63 @@
     })
     .catch(error => console.error('Navbar load error:', error));
 </script>
+<div class="container" style=" margin: -30px auto 2rem;">
 
-    <div class="container c">
-        <div class="row v">
-            <div class="col-md-12">
-                <h3 class="text-center">Teaching Experience</h3>
-            </div>
-        </div>
-        <p class="text-sm"><h4>At NIT Trichy</h4>
-            <ul><h5>July-December 2023</h5>
-            <li>M.Tech: Mathematical Foundation For Data Analytics</li>
-            <li>B.Tech: Mathematical Foundation For Computer Science(Minor Course)</li>
-            <li>B.Tech [ECE A & B] : Introduciton to Computer Science</li>
-            <li>Course Coordinator for DevOps Course [M.Tech]</li></ul>
-
-        <p class="text-sm">
-            <ul><h5>January-June 2023</h5>
-                <li>MCA: Computer Networks</li>
-                <li>M.Sc : Advanced Statistical Techniques for Data Science</li>
-        </p>
-        <p class="text-sm">
-            <ul><h5>September-December 2022</h5>
-                <li>M.Tech: Mathematical Foundations for Data Analytics</li>
-                <li>B.Tech [ECE B]: Introduction to Computer Programming</li></ul>
-        </p>
-        <p class="text-sm"><h4>AT BVRIT Hyderabad</h4>
-            <ul><h5>September 2021 - Feb 2022:</h5>
-            <li>B.Tech : Software Engineering</ul></li>
-            <ul><h5>April - August 2021:</h5><li>
-                B.Tech : Design and Analysis of Algorithms
-            </li></ul>
+    <div class="wrapper">
+    <div class="ribbon">
+      <i class="bi bi-person-lines-fill"></i> Teaching Experience
     </div>
+  </div>
+
+  <!-- NIT Trichy Section -->
+  <div class="section-card">
+    <div class="card-left-bar bar-experience"></div>
+    <div class="card-content">
+      <h4 class="section-title">
+        <span class="ribbon"><i class="fas fa-university"></i>At NIT Trichy</span>
+      </h4>
+
+      <h5>July - December 2023</h5>
+      <ul class="list">
+        <li><i class="fas fa-chevron-right"></i> M.Tech: Mathematical Foundation For Data Analytics</li>
+        <li><i class="fas fa-chevron-right"></i> B.Tech: Mathematical Foundation For Computer Science (Minor Course)</li>
+        <li><i class="fas fa-chevron-right"></i> B.Tech [ECE A & B]: Introduction to Computer Science</li>
+        <li><i class="fas fa-chevron-right"></i> Course Coordinator for DevOps Course [M.Tech]</li>
+      </ul>
+
+      <h5>January - June 2023</h5>
+      <ul class="list">
+        <li><i class="fas fa-chevron-right"></i> MCA: Computer Networks</li>
+        <li><i class="fas fa-chevron-right"></i> M.Sc: Advanced Statistical Techniques for Data Science</li>
+      </ul>
+
+      <h5>September - December 2022</h5>
+      <ul class="list">
+        <li><i class="fas fa-chevron-right"></i> M.Tech: Mathematical Foundations for Data Analytics</li>
+        <li><i class="fas fa-chevron-right"></i> B.Tech [ECE B]: Introduction to Computer Programming</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BVRIT Hyderabad Section -->
+  <div class="section-card">
+    <div class="card-left-bar bar-education"></div>
+    <div class="card-content">
+      <h4 class="section-title">
+        <span class="ribbon"><i class="fas fa-school"></i>At BVRIT Hyderabad</span>
+      </h4>
+
+      <h5>September 2021 - Feb 2022</h5>
+      <ul class="list">
+        <li><i class="fas fa-chevron-right"></i> B.Tech: Software Engineering</li>
+      </ul>
+
+      <h5>April - August 2021</h5>
+      <ul class="list">
+        <li><i class="fas fa-chevron-right"></i> B.Tech: Design and Analysis of Algorithms</li>
+      </ul>
+    </div>
+  </div>
 </div>
     <footer class="footer text-center con container-fluid">
         <div class="container">
